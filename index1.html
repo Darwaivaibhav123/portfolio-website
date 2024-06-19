@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            opacity: 0;
+            transition: opacity 3s;
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 100px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav .logo h2 {
+            font-weight: 700;
+            color: #2a2a2a;
+        }
+
+        .nav .link ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav .link ul li {
+            margin-left: 30px;
+        }
+
+        .nav .link ul a {
+            text-decoration: none;
+            color: #2a2a2a;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav .link ul a.active,
+        .nav .link ul a:hover {
+            color: #f4637b;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6rem;
+            margin-top: 150px;
+            padding: 0 20px;
+        }
+
+        .main .men {
+            width: 400px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .main .men:hover {
+            transform: scale(1.3);
+        }
+
+        .main .main-detil {
+            text-align: center;
+            color: #2a2a2a;
+        }
+
+        .main .main-detil p {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .main .main-detil h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .main .main-detil h4 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .btn button,
+        .btn a {
+            padding: 8px 20px;
+            border-radius: 30px;
+            margin-right: 1rem;
+            margin-bottom: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn button {
+            border: 1px solid #2a2a2a;
+            background: transparent;
+            color: #2a2a2a;
+        }
+
+        .btn .btn-2 {
+            padding: 8px 30px;
+            background: #2a2a2a;
+            color: #fff;
+            border: none;
+            outline: none;
+        }
+
+        .btn .btn-2:hover {
+            background: #f4637b;
+            transform: scale(1.1);
+        }
+
+        .social {
+            margin-top: 20px;
+        }
+
+        .social i {
+            color: #2a2a2a;
+            font-size: 40px;
+            margin: 0 14px;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .social i:hover {
+            color: #f4637b;
+        }
+
+        section {
+            padding: 60px 100px;
+            background: #fff;
+            margin-top: 60px;
+        }
+
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2a2a2a;
+            text-align: center;
+        }
+
+        section p,
+        section li {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #2a2a2a;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        section ul a {
+            color: #f4637b;
+            text-decoration: none;
+        }
+
+        section ul a:hover {
+            text-decoration: underline;
+        }
+
+        #project .project {
+            margin-bottom: 40px;
+        }
+
+        #project .project h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        #project .project p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+    <div class="hero">
+        <div class="nav">
+            <div class="logo">
+                <h2>Vaibhav Darwai</h2>
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a href="#about" class="active">About Me</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <img src="img/Passport1.png" alt="men" class="men">
+            <div class="main-detil">
+                <p>Hello, I'm</p>
+                <h1>Vaibhav Darwai</h1>
+                <h4>Data Analyst</h4>
+                <div class="btn">
+                    <a href="downloads/VAIBHAV_DARWAI_NEW.pdf" download="VAIBHAV_DARWAI_NEW.pdf"><button type="button">Download CV</button></a>
+                    <a href="mailto:vaibhavbdarwai@gmail.com"><button type="button" class="btn-2">Hire Me</button></a>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/Darwaivaibhav123"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/vaibhav-darwai-080a9721a"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Vaibhav Darwai, an aspiring Data Analyst with a passion for uncovering insights from data. Proficient in Python, power BI, Machine Learning,SQL, I'm eager to apply my skills to drive data-driven decisions and impactful projects.</p>
+    </section>
+
+    <section id="project">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Gearbox Fault Diagnosis</h3>
+            <p>The objective of the project was to develop a predictive model that could accurately determine faults in the gearbox.</p>
+            <a href="https://github.com/Darwaivaibhav123/DATASET-GEARBOX">Gearbox Fault Diagnosis</a>
+        </div>
+        <div class="project">
+            <h3>Crop Recommendation System</h3>
+            <p>The objective of the project was to develop a model to recommend crops based on various parameters.</p>
+            <a href="https://github.com/Darwaivaibhav123/crop_recommendation_system">Crop Recommendation System</a>
+        </div>
+        <div class="project">
+            <h3>E-commerce Sales Analysis</h3>
+            <p>Created an interactive dashboard to track and analyze online e-commerce sales data.</p>
+            <a href="https://github.com/Darwaivaibhav123/dashbord-ecomerce">E-commerce Sales Analysis</a>
+        </div>
+        <div class="project">
+            <h3>Super Sales Store Analysis</h3>
+            <p>Analyzed super sales store data using an interactive dashboard to derive insights and optimize operations.</p>
+            <a href="https://github.com/Darwaivaibhav123/Super_sale_store_dashborad">Super Sales Store Analysiss</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: vaibhavbdarwai@gmail.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/vaibhav-darwai-080a9721a">vaibhavdarwai</a></li>
+        </ul>
+    </section>
+</body>
+
+</html>
